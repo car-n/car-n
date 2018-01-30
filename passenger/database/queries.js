@@ -1,15 +1,5 @@
 const pg = require('./index.js').pg;
 
-const saveBooking = function(id, p_id, d_id, price, rate) {
-
-	console.log("saveBooking query called");
-	let query = `INSERT INTO bookings(p_id, d_id, price, rate) VALUES ('${id}', '${p_id}', '${d_id}', '${price}', '${rate}')`;
-	console.log("saveBooking query = ", query);
-
-	return pg.raw(query);
-};
-
-
 const saveLogin = function(id, lat, lon) {
 
 	console.log("saveLogin query called");
@@ -24,6 +14,15 @@ const saveDriver = function(id, lat, lon) {
 	console.log("saveDriver query called");
 	let query = `INSERT INTO drivers(id, lat, lon) VALUES ('${id}', '${lat}', '${lon})`;
 	console.log("saveDriver query = ", query);
+
+	return pg.raw(query);
+};
+
+const saveBooking = function(id, p_id, d_id, price, rate) {
+
+	console.log("saveBooking query called");
+	let query = `INSERT INTO bookings(p_id, d_id, price, rate) VALUES ('${id}', '${p_id}', '${d_id}', '${price}', '${rate}')`;
+	console.log("saveBooking query = ", query);
 
 	return pg.raw(query);
 };
