@@ -1,24 +1,29 @@
-DROP DATABASE CARN;
+DROP DATABASE IF EXISTS carn;
 
-CREATE DATABASE IF NOT EXISTS CARN;
-
-\c CARN;
+CREATE DATABASE carn;
 
 Drop table if exists passengers;
+Drop table if exists drivers;
 Drop table if exists bookings;
 
 CREATE TABLE passengers (
-  id INT(11) UNIQUE NOT NULL,
-  lat INT(8) NOT NULL,
-  lon INT(8) NOT NULL,
+  id INT UNIQUE NOT NULL,
+  lat INT NOT NULL,
+  lon INT NOT NULL,
   last_seen TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE drivers (
+  id INT UNIQUE NOT NULL,
+  lat INT NOT NULL,
+  lon INT NOT NULL
 );
 
 CREATE TABLE bookings (
   id SERIAL PRIMARY KEY,
   p_id INT REFERENCES passengers(id),
   d_id INT REFERENCES drivers(id),
-  price INT(6) NOT NULL,
-  rate INT(2) NOT NULL,
+  price INT NOT NULL,
+  rate INT NOT NULL,
   date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
