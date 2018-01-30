@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/car-n/car-n/issues"
   },
-  "homepage": "https://github.com/car-n/car-n#readme"
+  "homepage": "https://github.com/car-n/car-n#readme",
+  "dependencies": {
+    "knex": "^0.14.2"
+  }
 }
