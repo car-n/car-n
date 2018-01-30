@@ -1,0 +1,25 @@
+{
+  "name": "car-n",
+  "version": "1.0.0",
+  "description": "every car rolls on 4 microservices",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/car-n/car-n.git"
+  },
+  "keywords": [
+    "uber",
+    "clone",
+    "microservice",
+    "hackreactor"
+  ],
+  "author": "Cody Schindler, Ace White, Ryan Ngo, Nuno Neves",
+  "license": "UNLICENCED",
+  "bugs": {
+    "url": "https://github.com/car-n/car-n/issues"
+  },
+  "homepage": "https://github.com/car-n/car-n#readme"
+}
