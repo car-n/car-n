@@ -1,0 +1,36 @@
+{
+  "name": "CAR-N",
+  "version": "1.0.0",
+  "description": "The project description",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acenine/car-n.git"
+  },
+  "keywords": [],
+  "author": "Ace White",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acenine/car-n/issues"
+  },
+  "homepage": "https://github.com/acenine/car-n#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.17.2",
+    "dotenv": "^4.0.0",
+    "file-system": "^2.2.2",
+    "knex": "^0.14.2",
+    "koa": "^2.4.1",
+    "koa-router": "^7.4.0",
+    "moment": "^2.20.1",
+    "nodemon": "^1.14.10",
+    "pg": "^7.4.1",
+    "redis": "^2.8.0",
+    "underscore": "^1.8.3"
+  }
+}
